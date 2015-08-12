@@ -90,7 +90,7 @@ Ordination analysis using OTUs clustered from fragments aligned to V4 region of 
 
 - richness, diversity, evenness
 
-Microbial community in perennials rhizosphere have higher species richness (ACE) and diversity (inverse simpson) than in corn (Fig.~\ref{fig:otu.alpha.div}). Members in perennials are also more evenly distributed than in corn (Fig.~\ref{fig:otu.rankabuncurve}).
+Microbial community in perennials rhizosphere have higher species richness (ACE) and diversity (inverse simpson) than in corn (Fig.~\ref{fig:otu-alpha-div}). Members in perennials are also more evenly distributed than in corn (Fig.~\ref{fig:otu-rankabuncurve}).
 
 Corn had more Proteobacteria in rhizosphere while perennials had more Acidobacteria. Proteobacteria are mostly faster growers and Acidobacteria are mostly slow growers (add ref). Thus corn selected for faster grower while perenials selected for slow growers. Top three genera are Sphingomonas (Proteobacteria), Penicillium (Fungi), Burkholderia (Proteobacteria) in corn, Da023 (Acidobacteria), Akiw534 (Actinobacteria), Sphingomonas (proteobacteria) in Miscanthus and switchgrass. 
 - domain distribution (fungi, Table X)
@@ -114,7 +114,7 @@ We found corn was the most different among three biofuel crops.  Corn and Miscan
 
 - PCoA with functional categories
 
-Ordination analysis with both subsystem level 1 and 3 shows corn was different perennials and no significant difference between Miscanthus and switchgrass. The total variation explained by first two PCs are XX \% and YY \% in PCoA with level 1 subsystems and XX \% and YY \% in PCoA with level 3 subsystems (Fig.~\ref{subsys.l1.pcoa,subsys.l3.pcoa})
+Ordination analysis with both subsystem level 1 and 3 shows corn was different perennials and no significant difference between Miscanthus and switchgrass. The total variation explained by first two PCs are XX \% and YY \% in PCoA with level 1 subsystems and XX \% and YY \% in PCoA with level 3 subsystems (Fig.~\ref{fig:subsys-l1-pcoa},\ref{fig:subsys-l3-pcoa})
 
 - DE analysis with corn and Miscanthus
 
@@ -130,7 +130,7 @@ We found corn had more pathway (level 3 subsystems) genes in ``Stress Response''
 
 Since genes involved in nitrogen fixation and nitrification are not abundant in rhizosphere metagenome (add ref), those genes may not be well assembled in global assemblers. The annotation database that we use, SEED subsystem (add ref), does not include any nitrification genes. Thus our global assembly and annotation pipeline is not good option to analyze N cycle genes. We used Xander (ref), which is a gene targeted assembler that uses HMM (Hiden Marcov Model) of N cycle gene reference sequences to guide the assembly. The scripts for Xander assembly can be found at XXX.
 
-N cycle genes abundances, including Nitrogen fixation genes (nifH), nitrification genes (AOA and AOB), and denitrification genes (nirK, nirS, nosZ, nosZa2, qNOR, and cNOR) were normalized by rplB abundance and shown in Figure ~\ref{xander.ncycle.abun}. NifH, nirK, nosZa2, and qNOR were significantly different between corn and Miscanthus ($p < 0.05, n = 7$). NirK, nosZ and qNOR  were significantly different between corn and switchgrass. NosZ was significantly different between Miscanthus and switchgrass.
+N cycle genes abundances, including Nitrogen fixation genes (nifH), nitrification genes (AOA and AOB), and denitrification genes (nirK, nirS, nosZ, nosZa2, qNOR, and cNOR) were normalized by rplB abundance and shown in Figure ~\ref{fig:xander-ncycle-abun}. NifH, nirK, nosZa2, and qNOR were significantly different between corn and Miscanthus ($p < 0.05, n = 7$). NirK, nosZ and qNOR  were significantly different between corn and switchgrass. NosZ was significantly different between Miscanthus and switchgrass.
 
 @add alpha diversity with taxon table
 
@@ -152,7 +152,7 @@ Biofuel is a very important sustainable energy. Large scale plantation of biofue
 
 1) consistent separation of corn from perennials.
 
-We find corn is the most different among three crops, in community structure (Fig.~\ref{otu.pcoa}) @add rplB ordination, assembled genomic sequences (Fig.~\ref{contig.sim.venn}), and functional profile (Fig.~\ref{subsys.l1.pcoa,subsys.l3.pcoa}). It is known that change of plants can change soil microbial community (add ref). Another study has shown that similar results of rhizosphere community structure of three crops using amplicons of 16S rRNA gene (add ref), but our analysis on community structure is based on SSU rRNA extracted from shotgun metagenome thus includes 18S rRNA from Eukaryota and not limited by chimera and primer bias. The ordination analyses with weighted and unweighted unifrac distance both shows separation of three crops, but the variation explained by first two axes in weighted unifrac (61.8\%) are much larger than unweighted (15.7\%), which indicates separation of crops are more significant when abundance are considered (ADD adonis test). Consistently, the big difference between percentage of shared members without (21.5\%) and with (73.1\%) being weighed by abundance at OTU or genera level (Fig.~\ref{otu.venn,genus.venn}) suggests that most OTUs specific to one crop have low abundance and thus the difference among three crops are caused by abundance of shared members, not by OTUs unique to one crop. 
+We find corn is the most different among three crops, in community structure (Fig.~\ref{fig:otu-pcoa}) @add rplB ordination, assembled genomic sequences (Fig.~\ref{fig:contig-sim-venn}), and functional profile (Fig.~\ref{fig:subsys-l1-pcoa},\ref{fig:subsys-l3-pcoa}). It is known that change of plants can change soil microbial community (add ref). Another study has shown that similar results of rhizosphere community structure of three crops using amplicons of 16S rRNA gene (add ref), but our analysis on community structure is based on SSU rRNA extracted from shotgun metagenome thus includes 18S rRNA from Eukaryota and not limited by chimera and primer bias. The ordination analyses with weighted and unweighted unifrac distance both shows separation of three crops, but the variation explained by first two axes in weighted unifrac (61.8\%) are much larger than unweighted (15.7\%), which indicates separation of crops are more significant when abundance are considered (ADD adonis test). Consistently, the big difference between percentage of shared members without (21.5\%) and with (73.1\%) being weighed by abundance at OTU or genera level (Fig.~\ref{fig:otu-venn},\ref{fig:genus-venn}) suggests that most OTUs specific to one crop have low abundance and thus the difference among three crops are caused by abundance of shared members, not by OTUs unique to one crop. 
 
 Our comparative metagenomic analyses of assemblies and functional profile is beyond the existing studies relying on 16S rRNA gene or a few other functional genes (ADD REF). Metagenome assembly could represent the genomic content of communities. The sequence similarity comparison of metagenome assemblies of three crops also shows corn has the most different community (Table X), but the similarities between crops are smaller than those from OTUs without considering the abundance, which might be explained by different genetic content of members within the same species (OTU). Thus the above indicates larger genetic diversity compared to species (OTU) diveristy defined by SSU rRNA gene in metagenome. Moreover, functional diveristy using subsystems (level 1 and level 3) also confirms separation of annual and perennial as shown with OTU (species diversity) and assembly (genetic diversity) and suggests that change of biofuel crop in large scale can have impact on ecosystem services, such as N and C cycling.
 
@@ -162,11 +162,11 @@ Only 20\% of reads are used in the assembly. Only XX\% of genes in assembly can 
 
 2) larger dispersion in corn.
 
-Corn also shows more variation in beta diversity among replicates (Fig.~\ref{otu.venn}). There are two possible explanations: 1) Corn is annual, grows from seeds and establish its root system every year, while perennials (Miscanthus and switchgrass) have more stable root systems. As a result, rhizosphere microbial communities of corn show more stochasticity (more variation among replicates). 2) Corn has been bred for corn production under intensive fertilization for a long time and some traits for recruiting beneficial microbiome may have been lost.
+Corn also shows more variation in beta diversity among replicates (Fig.~\ref{fig:otu-venn}). There are two possible explanations: 1) Corn is annual, grows from seeds and establish its root system every year, while perennials (Miscanthus and switchgrass) have more stable root systems. As a result, rhizosphere microbial communities of corn show more stochasticity (more variation among replicates). 2) Corn has been bred for corn production under intensive fertilization for a long time and some traits for recruiting beneficial microbiome may have been lost.
 
 - Alpha diversity
 
-Perennials have higher alpha (local) diversity (Fig.~\ref{otu.alpha.div}) and also higher total OTU number (gamma diversity) when replicates are combined (Fig.~\ref{otu.venn}). Thus change from annual to perennials as biofuel crops can increase the overall microbial diversity, which could have a significant impact on ecosystem. The (OTU) richness of perennials are not significantly higher, partly due to high variation in corn, but higher evenness (Fig.~\ref{fig:otu.rankabuncurve) also contributes to the significance of higher diversity in perennials. 
+Perennials have higher alpha (local) diversity (Fig.~\ref{fig:otu-alpha-div}) and also higher total OTU number (gamma diversity) when replicates are combined (Fig.~\ref{fig:otu-venn}). Thus change from annual to perennials as biofuel crops can increase the overall microbial diversity, which could have a significant impact on ecosystem. The (OTU) richness of perennials are not significantly higher, partly due to high variation in corn, but higher evenness (Fig.~\ref{fig:otu-rankabuncurve}) also contributes to the significance of higher diversity in perennials. 
 
 According to a study on disturbance and diversity models (ADD REF, Svensson 2012), evenness should increase when disturbance are introduced. The annual life cycle of corn should encourage a more even community, which contradicts to our results (less evenness compared to perennials). Thus perennials are good at maintaining a more even community due to root exudates or agricultural management other than their their cycle such as less fertilizer usage.
 
@@ -174,7 +174,7 @@ According to a study on disturbance and diversity models (ADD REF, Svensson 2012
 
 - Taxonomy
 
-Other than difference in diversity, there are also signifcant differnce in community composition between corn and the other two perennial crops. Proteobacteria and Bacteroidetes enriched in corn are commonly considered to be copiotrophic taxa and Acidobacteria enriched in perennials are oligotrophic taxa (ADD REF, Fierer 2007, Eilers 2010, Davis 2011). Nitrogen addition can cause a shift of oligotrophic taxa (ADD REF, fierer 2012, Campbell 2010, Wessen 2010). Thus it is sensible that we have more copiotrophic taxa in corn because more fertilizer were added and more nitrogen were detected in soil loosely attached corn (Table X). Further, since copiotrophs need more carbon as well nitrogen, we predict that corn is also producing more exudates as carbon source compared to perennials, which is consistent with more ``Carbohydrates'' related pathway genes enriched in corn rhizosphere shown in functional diversity analysis (Fig.~\ref{fig:subsys.enrich.CvM}). Further experiemnts are needed to verify this point though. Moreover, copiotrophs have relatively fast growth rate in nutrient rich environment, which explains the lower evenness in corn (ADD REF Fierer 2012).
+Other than difference in diversity, there are also signifcant differnce in community composition between corn and the other two perennial crops. Proteobacteria and Bacteroidetes enriched in corn are commonly considered to be copiotrophic taxa and Acidobacteria enriched in perennials are oligotrophic taxa (ADD REF, Fierer 2007, Eilers 2010, Davis 2011). Nitrogen addition can cause a shift of oligotrophic taxa (ADD REF, fierer 2012, Campbell 2010, Wessen 2010). Thus it is sensible that we have more copiotrophic taxa in corn because more fertilizer were added and more nitrogen were detected in soil loosely attached corn (Table X). Further, since copiotrophs need more carbon as well nitrogen, we predict that corn is also producing more exudates as carbon source compared to perennials, which is consistent with more ``Carbohydrates'' related pathway genes enriched in corn rhizosphere shown in functional diversity analysis (Fig.~\ref{fig:subsys-enrich-CvM}). Further experiemnts are needed to verify this point though. Moreover, copiotrophs have relatively fast growth rate in nutrient rich environment, which explains the lower evenness in corn (ADD REF Fierer 2012).
 
 - Higher fungal percentage in corn $\rightarrow$ C/N ratio, contradiction, more exudates from corn $\rightarrow$ copiotrophic $\rightarrow$ not selecting beneficial microbes
 
@@ -194,9 +194,9 @@ OTU based ordination analyses of XX, YY, ZZ genes shows the same separation of c
 
 - quantity of N cycle genes
 
-Perennials has more nifH than corn on average (significant for Miscanthus but not significant for switchgrass), suggesting perennials have more nitrogen fixing members. This is consistent with other studies (ADD REF, Mao 2013). Moreover, Miscanthus is the most diverse including 9 genera (7 in corn and 5 in switchgrass). Three crops are very different in community composition with Rhizobium most abundant in corn, Coraliomargarita most abundant in Miscanthus, and Novosphingobium most abundant in switchgrass (Fig.~\ref{xander.nifH.genus}), which suggests each crop is different in selecting the nitrogen fixing members.
+Perennials has more nifH than corn on average (significant for Miscanthus but not significant for switchgrass), suggesting perennials have more nitrogen fixing members. This is consistent with other studies (ADD REF, Mao 2013). Moreover, Miscanthus is the most diverse including 9 genera (7 in corn and 5 in switchgrass). Three crops are very different in community composition with Rhizobium most abundant in corn, Coraliomargarita most abundant in Miscanthus, and Novosphingobium most abundant in switchgrass (Fig.~\ref{fig:xander-nifH-genus}), which suggests each crop is different in selecting the nitrogen fixing members.
 
-More AOA than AOB in all samples suggests archaeal nitrifiers are the majority in nitrifying community in our rhizosphere soil samples, which is common in soil (ADD REF). AOA is also the majority of archaea since archaea is XX\% in total community based on SSU rRNA gene and AOA is about 1\% based on Xander results (Fig.~\ref{fig:xander.ncycle.abun}). Further, the result that corn with fertilizer addition does not have the highest abundance of nitrifying members (Fig.~\ref{fig:xander.ncycle.abun}) suggests nitrifier abundance does positively respond to fertilizer. @explain (transcription, other refs).
+More AOA than AOB in all samples suggests archaeal nitrifiers are the majority in nitrifying community in our rhizosphere soil samples, which is common in soil (ADD REF). AOA is also the majority of archaea since archaea is XX\% in total community based on SSU rRNA gene and AOA is about 1\% based on Xander results (Fig.~\ref{fig:xander-ncycle-abun}). Further, the result that corn with fertilizer addition does not have the highest abundance of nitrifying members (Fig.~\ref{fig:xander-ncycle-abun}) suggests nitrifier abundance does positively respond to fertilizer. @explain (transcription, other refs).
 
 Overall there are more denitrification than nitrification or nitrogen fixation genes in all samples. Nitrite reductase (nirK and nirS) are more abundant in corn, but nitric oxide reductase (qNOR and cNOR) and nitrous oxide reductase (nosZ and nosZa2) are more abundant in perennials. @explain. 
 
@@ -204,7 +204,7 @@ Overall there are more denitrification than nitrification or nitrogen fixation g
 
 Denitrification involves multiple steps and some steps have more than one enzymes involved.  Our results shows that different steps can indicate different conclusions (e.g. nirK vs. qNOR or nirK vs. nosZa2) and some genes are too few to represent the process rate compared paralogs coding enzymes with the same function (e.g. nirS in nitrite reduction, cNOR in nitric oxide reduction, and nosZ in nitrous oxide reduction). Most of other studies only pick one enzyme of one step to represent the process rate of whole pathway (ADD REF) and could have misleading or incomplete conclusion.
 
-Perennials have lower nitrification/fixation, denitrification/nitrification ratios (Fig.~\ref{fig:xander.ncycle.ratio}), suggesting perennials are better than keeping nitrogen in the soil and thus better nitrogen sustainability.
+Perennials have lower nitrification/fixation, denitrification/nitrification ratios (Fig.~\ref{fig:xander-ncycle-ratio}), suggesting perennials are better than keeping nitrogen in the soil and thus better nitrogen sustainability.
 
 @Discuss the variation within a gene, identity distribution to the best hit. Discuss the diversity of genes with only a few taxa, e.g. AOA and AOB.
 
@@ -240,97 +240,90 @@ There are more nifH in Miscanthus and switchgrass than corn, and ratio of amoA/n
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/otu.venn}
+    \includegraphics[width=0.8\textwidth]{figures/otu-venn}
     \caption[Venn diagram of OTUs]{Venn diagram of OTUs among rhizosphere microbial community among three crops. The one on the left does not consider abundance of OTU (unique) and the one on the right considers abundance. The shared unique OTUs is 21.5\% (left) of total but 73.1\% (right) when weighted by abundance.}
-    \label{fig:otu.venn}
+    \label{fig:otu-venn}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/genus.venn}
+    \includegraphics[width=0.8\textwidth]{figures/genus-venn}
     \caption[Venn diagram of genera]{Venn diagram of genera among rhizosphere microbial community among three crops. The one on the left does not consider abundance of OTU (unique) and the one on the right considers abundance. The shared unique OTUs is 55.2\% (left) of total but 98.1\% (right) when weighted by abundance.}
-    \label{fig:genus.venn}
+    \label{fig:genus-venn}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/otu.rankabuncurve}
+    \includegraphics[width=0.8\textwidth]{figures/otu-rankabuncurve}
     \caption[Rank abundance curve]{Rank abundance curve of microbial community of corn, Miscanthus and switchgrass. Corn has the most uneven microbial community in rhizosphere.}
-    \label{fig:otu.rankabuncurve}
+    \label{fig:otu-rankabuncurve}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/otu.alpha.div}
+    \includegraphics[width=0.8\textwidth]{figures/otu-alpha-div}
     \caption[Alpha diversity]{Alpha diversity of microbial community of three crops. Corn has lower diversity than Miscanthus and switchgrass.}
-    \label{fig:otu.alpha.div}
+    \label{fig:otu-alpha-div}
     \end{figure}
 
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/contig.sim.venn}
+    \includegraphics[width=0.8\textwidth]{figures/contig-sim-venn}
     \caption[Assembly sequence similarity]{Assembly sequence similarity among three crops. Corn is the most different.}
-    \label{fig:contig.sim.venn}
+    \label{fig:contig-sim-venn}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/subsys.l3.pcoa}
+    \includegraphics[width=0.8\textwidth]{figures/subsys-l3-pcoa}
     \caption[PCoA plot based on subsystem profile]{PCoA plot of subsystem level 3 function profile of three crops. The subsystems profiles are functional annotation from assemblies. Three crops have significantly different communities and corn is the most different.}
-    \label{fig:subsys.l3.pcoa}
+    \label{fig:subsys-l3-pcoa}
     \end{figure}
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/subsys.l3.pcoa}
+    \includegraphics[width=0.8\textwidth]{figures/subsys-l1-pcoa}
     \caption[PCoA plot based on subsystem profile]{PCoA plot of subsystem level 1 function profile of three crops. The subsystems profiles are functional annotation from assemblies. Three crops have significantly different communities and corn is the most different.}
-    \label{fig:subsys.l3.pcoa}
+    \label{fig:subsys-l1-pcoa}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/subsys.enrich.CvM}
+    \includegraphics[width=0.8\textwidth]{figures/subsys-enrich-CvM}
     \caption[Number of pathways enriched in categories in subsystem level 1]{Number of pathways enriched (in either corn or miscanthus) in categories in subsystem level 1. ``Carbohydrate metablism'', ``Stress response'', and ``Cell wall'' categories are enriched corn, while ``Amino acid'' are enriched in Miscanthus.}
-    \label{fig:subsys.enrich.CvM}
+    \label{fig:subsys-enrich-CvM}
     \end{figure}
+
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/subsys.enrich.CvM}
-    \caption[Number of pathways enriched in categories in subsystem level 1]{Number of pathways enriched (in either corn or miscanthus) in categories in subsystem level 1. ``Carbohydrate metablism'', ``Stress response'', and ``Cell wall'' categories are enriched corn, while ``Amino acid'' are enriched in Miscanthus.}
-    \label{fig:subsys.enrich.CvM}
-    \end{figure}
-
-
-    \begin{figure}[tbph!]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/xander.ncycle.abun}
+    \includegraphics[width=0.8\textwidth]{figures/xander-ncycle-abun}
     \caption[Abundance and phylum level distribution of N cycle genes]{Abundance and phylum level distribution of N cycle genes. Each genes is standardized by rplB.}
-    \label{fig:xander.ncycle.abun}
+    \label{fig:xander-ncycle-abun}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/xander.nifH.genus}
+    \includegraphics[width=0.8\textwidth]{figures/xander-nifH-genus}
     \caption[Abundance and genus level distribution of nifH]{Abundance and genus level distribution of nifH. Abundance is standardized by rplB. Three crops are quite different in genus composition. Miscanthus is the most abundant in nifH and has the most number of genera.}
-    \label{fig:xander.nifH.genus}
+    \label{fig:xander-nifH-genus}
     \end{figure}
 
 
     \begin{figure}[tbph!]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/xander.ncycle.ratio}
+    \includegraphics[width=0.8\textwidth]{figures/xander-ncycle-ratio}
     \caption[Ratios of interest related to N cycle genes]{Ratios of interest related to N cycle genes.}
-    \label{fig:xander.ncycle.ratio}
+    \label{fig:xander-ncycle-ratio}
     \end{figure}
 
 
