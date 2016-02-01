@@ -1,0 +1,7 @@
+Notes
+------
+SSU rRNA based analysis was done by SSUsearch (https://github.com/jiarong/SSUsearch.git).
+
+search.sh: a script that did search part of SSUsearch pipeline. Here it only process one sample.
+
+diversity.sh: a script that did classification, clustering, and diversity analysis. It assumed search part of the pipeline had been applied to all samples.

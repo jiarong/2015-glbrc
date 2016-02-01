@@ -1,0 +1,17 @@
+qsub -l walltime=165:00:00,mem=500GB -v MAX_JVM_HEAP=500G,FILTER_SIZE=40,K_SIZE=45,genes="nirK rplB nifH",THREADS=2,SAMPLE_SHORTNAME=C,WORKDIR=/mnt/research/rdp/private/Qiong_xander_analysis/KBS_allcorns/mercy_kmer,SEQFILE=/mnt/research/tiedjelab/GLBRC_Samples_Fall_2012_New_trimmed/C*gz ../../qsub_scripts/qsub_run_xander_bloomAndStartOnly.sh
+
+qsub -l walltime=165:00:00,mem=300GB,nodes=01:ppn=3 -v
+MAX_JVM_HEAP=300G,FILTER_SIZE=40,K_SIZE=45,genes="nosZ nosZ_a1
+nosZ_a2",THREADS=3,SAMPLE_SHORTNAME=C,WORKDIR=/mnt/research/rdp/private/Qiong_xander_analysis/KBS_allcorns/mercy_kmer,SEQFILE=/mnt/research/tiedjelab/GLBRC_Samples_Fall_2012_New_trimmed/C*gz
+../../qsub_scripts/qsub_run_xander_searchstepOnly.sh
+qsub -l walltime=165:00:00,mem=300GB,nodes=01:ppn=3 -v
+MAX_JVM_HEAP=300G,FILTER_SIZE=40,K_SIZE=45,genes="nirS amoA_AOA
+amoA_AOB",THREADS=3,SAMPLE_SHORTNAME=C,WORKDIR=/mnt/research/rdp/private/Qiong_xander_analysis/KBS_allcorns/mercy_kmer,SEQFILE=/mnt/research/tiedjelab/GLBRC_Samples_Fall_2012_New_trimmed/C*gz
+../../qsub_scripts/qsub_run_xander_searchstepOnly.sh
+qsub -l walltime=165:00:00,mem=300GB,nodes=01:ppn=2 -v
+MAX_JVM_HEAP=300G,FILTER_SIZE=40,K_SIZE=45,genes="norB_qNor",THREADS=2,SAMPLE_SHORTNAME=C,WORKDIR=/mnt/research/rdp/private/Qiong_xander_analysis/KBS_allcorns/mercy_kmer,SEQFILE=/mnt/research/tiedjelab/GLBRC_Samples_Fall_2012_New_trimmed/C*gz
+../../qsub_scripts/qsub_run_xander_searchstepOnly.sh
+qsub -l walltime=165:00:00,mem=300GB,nodes=01:ppn=2 -v
+MAX_JVM_HEAP=300G,FILTER_SIZE=40,K_SIZE=45,genes="narG",THREADS=2,SAMPLE_SHORTNAME=C,WORKDIR=/mnt/research/rdp/private/Qiong_xander_analysis/KBS_allcorns/mercy_kmer,SEQFILE=/mnt/research/tiedjelab/GLBRC_Samples_Fall_2012_New_trimmed/C*gz
+../../qsub_scripts/qsub_run_xander_searchstepOnly.sh
+
